@@ -1,6 +1,5 @@
 import { test, expect  } from '@playwright/test';
-import exp from 'constants';
-import { request } from 'http';
+
 
 test(' API Get Request', async({request})=> {
     const response = await request.get('https://reqres.in/api/users/2');
